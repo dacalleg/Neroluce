@@ -65,9 +65,14 @@ Commons
 body {
 	background: white;
 	font: 13px 'Open Sans', sans-serif;
-	color: #1c1f26;
+	color: #000;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
+}
+
+.gray
+{
+	color: gray;
 }
 
 .embed-container {
@@ -329,7 +334,7 @@ Parallax
 --------------------------------------------------------*/
 
 
-#parallax1, #parallax2, #parallax3 {
+#parallax1, #parallax2, #parallax3, #parallax4, #parallax5, #parallax6 {
 	width: 100%;
 	height: 440px;
 	background-color: #1c1f26;
@@ -340,10 +345,17 @@ Parallax
 #parallax1 .vertical-text,
 #parallax2 .vertical-text,
 #parallax3 .vertical-text,
+#parallax4 .vertical-text,
+#parallax5 .vertical-text,
+#parallax6 .vertical-text,
 #parallax1 .pattern,
 #parallax2 .pattern,
-#parallax3 .pattern {
+#parallax3 .pattern,
+#parallax4 .pattern,
+#parallax5 .pattern,
+#parallax6 .pattern{
 	height: 440px;
+	line-height:1;
 }
 
 
@@ -432,6 +444,12 @@ Parallax
 		margin-bottom: 20px;
 	}
 	
+	#parallax3
+	{
+		color:#FFF;
+	}
+		
+	
 	.bg3 {
 		background: url(../images/parallax/teaser3.jpg) 50% 50% fixed repeat-y;
 		width: 100%;
@@ -454,6 +472,15 @@ Parallax
 	
 	.clients li:hover {
 		opacity:0.7;
+	}
+	
+	.bg4 {
+		background: url(../images/parallax/teaser4.jpg) 50% 50% fixed repeat-y;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		position: absolute;
+		background-size: 110%;
 	}
 
 
@@ -543,7 +570,7 @@ Content
 		overflow: hidden;
 		float: left;
 		color: white;
-		font: 92px/0.9 "BebasNeueRegular", Helvetica, Arial, sans-serif;
+		font: 60px/0.9 "BebasNeueRegular", Helvetica, Arial, sans-serif;
 		margin: 0 20px 0 0;
 	}
 	
@@ -615,7 +642,6 @@ Content
 	
 	.service h3 {
 		text-align: center;
-		margin-top: 46px;
 	}
 	
 	.service .description {
@@ -623,13 +649,11 @@ Content
 	}
 
 	.service .icon {
-		width: 160px;
-		height: 160px;
-		border-radius:160px;
-		-webkit-border-radius: 160px;
-		-moz-border-radius: 160px;
+		width: 110px;
+		height: 110px;
 		margin: 24px auto 24px auto;
-		background: #f0f2f5 center center no-repeat;
+		background: transparent center center no-repeat;
+		background-size: 100% 100%;
 	}
 	
 	
