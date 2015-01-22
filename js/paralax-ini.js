@@ -28,8 +28,11 @@ $(document).ready(function(){
 	
 	if (testMobile == null)
 	{
-		$('.bg1').parallax("50%", 0.4);
-		$('.bg2').parallax("50%", 0.4);
-		$('.bg3').parallax("50%", 0.4);
+		$('.bg1').parallax("50%", 0.5);
+		$('.bg2').parallax("50%", 0.5);
+		$('.bg3').parallax("50%", 0.5);
+		$('.bg4').parallax("50%", 0.5);
+		$('.bg5').parallax("50%", 0.5);
+		$('.bg6').parallax("50%", 0.5);
 	}
 })
