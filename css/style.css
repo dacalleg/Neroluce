@@ -1694,3 +1694,53 @@ Shortcodes
 	    border-top: 7px solid #1c1f26;
 	    bottom: -5px;
 	    left: 40%;
+	}
+	
+	#services-detail
+	{
+		padding-bottom:0
+	}
+	#services-detail .claim .container
+	{
+		padding-bottom:30px;
+	}
+	#services-detail .claim .container .bigicon
+	{
+		width:100%;
+		border:10px solid #000;
+		border-radius:100%;
+	}
+	#services-detail .claim .container .bigicon .inner
+	{
+		padding:20px;
+	}
+	#services-detail .claim .container .bigicon .inner img
+	{
+		width:100%;
+	}
+	#services-detail h1
+	{
+		margin-top:35px;
+		padding-left:30px
+	}
+	#services-detail .detail
+	{
+		background-color:#DDD;
+		padding-bottom:80px;
+		padding-top:30px
+	}
+	#services-detail .container-icons
+	{
+		margin-bottom:30px
+	}
+	#services-detail .icons
+	{
+		width:35px;
+		height:35px;
+		float:right;
+		margin-left:10px
+	}
+	#services-detail .icons img
+	{
+		width:100%;
+	}
