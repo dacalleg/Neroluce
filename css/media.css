@@ -43,7 +43,7 @@ Responsive elements
                 #about, #culture, #services, #portfolio { padding-top: 32px; padding-bottom: 40px; }
                 #prevslide, #nextslide{ position:absolute; height:15px; width:15px; top:50px; margin-top:-21px; opacity:0.6; }
                 #culture h4 { padding-top: 27px; }
-                .bg1, .bg2, .bg3 { background-attachment: scroll; background-size: cover; }
+                .bg1, .bg2, .bg3, .bg4, .bg5, .bg6 { background-attachment: scroll; background-size: cover; }
                 .column .img-wrp { margin: 40px 0px 14px; }	
                 #prevslide{ right:55px; font-size: 16px; }
 				#nextslide{ right:30px; font-size: 16px; }
