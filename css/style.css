@@ -129,6 +129,7 @@ h1 {
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 7px;
+	line-height:.9;
 }
 
 h1.white {
@@ -197,7 +198,7 @@ Navigation
 --------------------------------------------------------*/
 
 nav {
-	background: url(../images/nav-bg.png);
+	background: #000;
 	width: 100%;
 	position: relative;
 	z-index: 1000;
@@ -528,7 +529,7 @@ Content
 }
 
 .one-text {
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.5; 
 }
 
