@@ -217,54 +217,53 @@
 	
 	
 	<!-- Start Third Parallax Background (Clients) -->
-	<div id="parallax3">
+	<div id="parallax3" class="hidden-mobile">
 		<div class="bg3"></div>
 		<div class="pattern"></div>
 		<div class="container">
-			<div class="service three columns">
-				<div class="inner">
-					<div class="icon" style="background-image: url(./images/icons/icona_01c.png)"></div>
-					<h3>SOPRALLUOGO</h3>
-					<p class="description">Studio dello spazio e ascolto delle esigenze.</p>
+			<div class="inner-service">
+				<div class="service three columns">
+					<div class="inner">
+						<div class="icon" style="background-image: url(./images/icons/icona_01c.png)"></div>
+						<h3>SOPRALLUOGO</h3>
+						<p class="description">Studio dello spazio e ascolto delle esigenze.</p>
+					</div>
+				</div>	
+				<div class="service three columns">
+					<div class="inner">
+						<div class="icon" style="background-image: url(./images/icons/icona_02c.png)"></div>
+						<h3>ANALISI E CONFRONTO </h3>
+						<p class="description">Sviluppo del rapporto tra i tuoi obiettivi e le nostre soluzioni.</p>
+					</div>                                               
+				</div>	
+				<div class="service three columns">
+					<div class="inner">
+						<div class="icon" style="background-image: url(./images/icons/icona_03c.png)"></div>
+						<h3>PROGETTAZIONE ILLUMINOTECNICA</h3>
+						<p class="description">Creazione del progetto d’illuminazione e selezione delle forniture.</p>
+					</div>                                                
+				</div>	
+				<div class="service three columns">
+					<div class="inner">
+						<div class="icon" style="background-image: url(./images/icons/icona_04c.png)"></div>
+						<h3>VENDITA </h3>
+						<p class="description">Fornitura dei materiali e delle professionalità idonee alla realizzazione del progetto.</p>
+					</div>                                                
+				</div>	
+				<div class="service three columns">
+					<div class="inner">
+						<div class="icon" style="background-image: url(./images/icons/icona_05c.png)"></div>
+						<h3>POST VENDITA</h3>
+						<p class="description">Assistenza tecnica continua.</p>
+					</div>                                                
 				</div>
-			</div>
-					
-			<div class="service three columns">
-				<div class="inner">
-					<div class="icon" style="background-image: url(./images/icons/icona_02c.png)"></div>
-					<h3>ANALISI E CONFRONTO </h3>
-					<p class="description">Sviluppo del rapporto tra i tuoi obiettivi e le nostre soluzioni.</p>
-				</div>                                               
-			</div>
-					
-			<div class="service three columns">
-				<div class="inner">
-					<div class="icon" style="background-image: url(./images/icons/icona_03c.png)"></div>
-					<h3>PROGETTAZIONE ILLUMINOTECNICA</h3>
-					<p class="description">Creazione del progetto d’illuminazione e selezione delle forniture.</p>
-				</div>                                                
-			</div>	
-			
-			<div class="service three columns">
-				<div class="inner">
-					<div class="icon" style="background-image: url(./images/icons/icona_04c.png)"></div>
-					<h3>VENDITA </h3>
-					<p class="description">Fornitura dei materiali e delle professionalità idonee alla realizzazione del progetto.</p>
-				</div>                                                
-			</div>	
-			
-			<div class="service three columns">
-				<div class="inner">
-					<div class="icon" style="background-image: url(./images/icons/icona_05c.png)"></div>
-					<h3>POST VENDITA</h3>
-					<p class="description">Assistenza tecnica continua.</p>
-				</div>                                                
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
 	
 	<div id="services-detail" class="page">
-		<div class="claim">
+		<div class="claim hidden-mobile">
 			<div class="container">
 				<div class="three columns">
 					<div class="bigicon">
@@ -274,7 +273,7 @@
 					</div>
 				</div>
 				<div class="eleven columns">
-					<h1>SOPRALLUOGO</h1>
+					<h1></h1>
 				</div>
 			</div>
 		</div>
@@ -299,9 +298,8 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
+					<h3 class="visible-mobile"></h3>
 					<div class="text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, earum, ad, aperiam eveniet odio dolorem ea eius rem dolores provident error reprehenderit corporis labore ipsum molestias in quam sapiente cum!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, ducimus, doloribus, labore veritatis rem alias magni laudantium accusamus expedita nisi similique quisquam. Beatae consequatur hic praesentium quas ad vero saepe!</p>
 					</div>
 				</div>
 			</div>
@@ -732,11 +730,13 @@
 				var bigimgsrc = $(section).find('.bigimg').attr('src');
 				
 				$('#services-detail').find('h1').html(h1);
+				$('#services-detail').find('h3').html(h1);
 				$('#services-detail').find('.text').html(text);
 				$('#services-detail').find('.bigicon img').attr('src',bigimgsrc);
 				$(this).addClass('hidden');
 				$(this).parent().append('<img src="'+bigimgsrc+'" alt="" class="hover">');
 			});
+			$('[data-load]').last().click();
 			
 			$('.item').show();
 			var $container = $('#portfolio_items');

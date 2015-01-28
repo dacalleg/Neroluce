@@ -453,6 +453,11 @@ Parallax
 
 	/*Parallax3------------------------------------------*/
 	
+	#parallax3 .container
+	{
+		margin-top:60px;
+	}
+	
 	#parallax3 h2 {
 		text-align: center;
 		margin-bottom: 20px;
@@ -1766,4 +1771,8 @@ Shortcodes
 	#services-detail .icons img
 	{
 		width:100%;
+	}
+	img[data-load]
+	{
+		cursor: pointer;
 	}

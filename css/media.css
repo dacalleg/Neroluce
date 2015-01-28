@@ -2,6 +2,30 @@
 Responsive elements
 --------------------------------------------------------*/
 
+@media only screen and (min-width: 959px)
+{
+				.inner-service
+				{
+					margin-left:20px;
+				}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.hidden-mobile
+	{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	.visible-mobile
+	{
+		display:none;
+	}
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
                 h1 { font-size: 68px;}
                 .one-text { font-size: 16px;}
@@ -13,6 +37,10 @@ Responsive elements
                 #contact { background-size: 1437px; }
                 .item { height: 167px; }
                 .ib-text { padding-right: 26%; }
+				.inner-service
+				{
+					margin-left:14px;
+				}
 } 
 
 @media only screen and (width: 1024px) {
@@ -73,11 +101,6 @@ Responsive elements
 }
 
 @media only screen and (min-width: 1400px) {
-                nav .container,
-                #homepage .container,
-                #homepage .container
-                .sixteen.columns
-                { width: 96%; }
 
                 nav .three.columns { float: right; }
                 .slider-text { width: 100%; }
@@ -87,11 +110,10 @@ Responsive elements
                 #parallax1 .vertical-text, #parallax2 .vertical-text,
                 #parallax3 .vertical-text, #parallax1 .pattern,
                 #parallax2 .pattern, #parallax3 .pattern
-                { height: 600px; }
+				{ height: 600px; }
                 
                 #prevslide, #nextslide{ position:absolute; height:30px; width:30px; top:210px; margin-top:-21px; opacity:0.6; }
-                .bg1, .bg2, .bg3 { background-size: 100%; }
-                
+                .bg1, .bg2, .bg3 { background-size: 100%; }                
     } 
 
 
